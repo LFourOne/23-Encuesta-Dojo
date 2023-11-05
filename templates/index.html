@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css")}}">
+    <title>Encuesta Dojo</title>
+</head>
+<body>
+    <section class="container">
+        <div class="sub-container">
+            <div class="content">
+                <form class="form" action="/process" method="POST">    
+                    <h1 class="title">Dojo Survey</h1>
+                    <div class="form-content">
+                        <p>Name:</p>
+                        <div> <input type="text" name="name" class="textandoptions"> </div>
+                    </div>
+                    <div class="form-content">
+                        <p>Dojo Location:</p>
+                        <div> 
+                            <select name="dojo" class="textandoptions">
+                                <option value="selectdojo"> --- Select A Location --- </option>
+                                <option value="Chicago"> Chicago </option>
+                                <option value="Seatle"> Seatle </option>
+                                <option value="Online"> Online </option>
+                                <option value="Burbank"> Burbank </option>
+                                <option value="Bellevue"> Bellevue </option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <p> Favorite Language: </p>
+                        <div>
+                            <select name="language" class="textandoptions">
+                                <option value="selectlanguage"> --- Select A Language --- </option>
+                                <option value="HTML"> HTML </option>
+                                <option value="CSS"> CSS </option>
+                                <option value="JavaScript"> JavaScript </option>
+                                <option value="Python"> Python </option>
+                                <option value="C#"> C# </option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <p> Comments: </p>
+                        <div>
+                            <textarea name="comments" class="comments"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <button class="btn" type="submit"> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

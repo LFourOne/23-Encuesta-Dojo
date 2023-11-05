@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css")}}">
+    <title>Encuesta Dojo Results</title>
+</head>
+<body>
+    <section class="r-container">
+        <div class="r-content">
+            <h1 class="r-title" style="color: royalblue"> {{ session.datos.name }} </h1>
+            <div class="r-varcontent">
+                <div> <p> Dojo Location: </p> </div>
+                <div> <p style="padding-left: 10px;"> {{session.datos.dojo}} </p>  </div>
+            </div>
+            <div class="r-varcontent">
+                <div> <p> Favorite Language: </p> </div>
+                <div> <p style="padding-left: 10px;"> {{session.datos.language}} </p>  </div>
+            </div>
+            <div class="r-varcontent">
+                <div> <p> Comments: </p> </div>
+                <div> <p style="padding-left: 10px;"> {{session.datos.comments}} </p>  </div>
+            </div>
+            <div>
+                <form action="/">
+                    <button class="btn" type="submit"> Home </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

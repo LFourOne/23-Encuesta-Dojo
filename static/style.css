@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66, 66, 66);
+    border: 2px solid black;
+    height: 750px;
+    width: 500px;
+    margin: 50px 650px;
+}
+.title{
+    color: orange;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    gap: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btn{
+    border: 0px solid;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    background-color: rgb(238, 208, 77);
+    cursor: pointer;
+}
+.textandoptions{
+    border: 0px solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 400px;
+    text-indent: 10px;
+}
+.comments{
+    border: 0px solid;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    padding-top: 5px;
+    text-indent: 10px;
+    font-size: 15px;
+}
+/* TODO LO DE ARRIBA ES PARA INDEX.HTML
+Y LO DE ABAJO ES PARA RESULT.HTML */
+
+.r-container{
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    margin: 170px 570px;
+    height: 500px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+.r-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.r-title{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.r-varcontent{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
